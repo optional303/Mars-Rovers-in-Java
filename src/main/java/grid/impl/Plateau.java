@@ -28,25 +28,25 @@ public class Plateau implements Landscape {
     }
 
     public void moveXForward(){
-        if (coordinateX <= gridSizeX){
+        if (coordinateX < gridSizeX){
             coordinateX++;
         }
     }
 
     public void moveYForward() {
-        if (coordinateY <= gridSizeY){
+        if (coordinateY < gridSizeY){
             coordinateY++;
         }
     }
 
     public void moveXBackwards() {
-        if (coordinateX >= gridSizeX){
+        if (coordinateX > 0){
             coordinateX--;
         }
     }
 
     public void moveYBackwards() {
-        if (coordinateY >= gridSizeY){
+        if (coordinateY > 0){
             coordinateY--;
         }
     }
